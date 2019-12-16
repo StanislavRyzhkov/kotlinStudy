@@ -7,10 +7,10 @@ import company.ryzhkov.list.LinkedRecursiveList
 fun main() {
     var list: LinkedRecursiveList<Int> = Empty
 
-    for (i in 0..1000) {
+    for (i in 0..3000) {
         list = InnerList(i, list)
     }
 
-    println(list[500])
+    println(list[1500])
     println(list.size)
 }
